@@ -15,4 +15,5 @@ def get_webhook():
 @app.post("/webhook")
 async def hook(request: Request):
     data = await request.json()
+    print(data)
     return {"Data": data}
